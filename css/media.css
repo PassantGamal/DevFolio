@@ -1,0 +1,545 @@
+@media (min-width: 640px) {
+}
+@media (min-width: 349px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .hero{
+    height: 100vh;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .counter {
+    height: 110vh;
+    position: relative;
+    padding: 8rem 0;
+    background-image: url(../img/post-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .counter > .overlay {
+    background-color: rgba(0, 119, 255, 0.58);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio .right span {
+    color: #0078ff;
+    cursor: pointer;
+  }
+  .portfolio .left h2 {
+    font-size: 19.2px;
+  }
+  .portfolio .left p .blue {
+    color: #0078ff;
+  }
+  .portfolio .left p {
+    font-size: 12.8px;
+  }
+  .portfolio .zoom:hover img {
+    transform: scale(1.5);
+  }
+  .portfolio .zoom img {
+    overflow: hidden;
+    transition: transform 1.5s;
+  }
+  .person-data {
+    height: 75vh;
+    position: relative;
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .person-data span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+  }
+  .person-data p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  .person-data .overlay {
+    position: absolute;
+    padding-top: 10%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 119, 255, 0.58);
+  }
+  .carousel-indicators .ind-left,
+  .carousel-indicators .ind-right {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .card-footer img{
+    width: 35px;
+    border-radius: 50%;
+   }
+   .card-footer a{
+    text-decoration: none;
+    color: black;
+    transition:color .5s;
+   }
+   .card-footer a:hover{
+    color:#0078FF;
+   }
+ .contact{
+    position: relative;
+    height: 200vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/overlay-bg.jpg);
+   }
+   .contact .top h3{
+    font-size: 2rem;
+   }
+   .form-group .button{
+    background-color: #0078FF;
+   }
+   .contact .main-p p{
+    font-size: 1.25rem;
+    font-weight: 300;
+   }
+   .right-icons span{
+    color: #0078FF;
+   }
+   .contact .last div{
+    border: 3px solid #0078FF;
+    padding:10px;
+    border-radius:50%;
+    transition: border 1s,background-color 1s,color .5s;
+   }
+   .contact .last div:hover{
+    border: 3px solid #cde1f8;
+    background-color: #0078FF;
+    color: white;
+   }
+   .contact .overlay{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 119, 255, 0.68);
+   }
+   .footer{
+    color: #fff;
+    padding: 20px 0;
+    background: #0062d3;
+   }
+
+   .dropdown:hover > .dropdown-menu {
+    display:flex;
+    flex-direction: column;
+    right:25%;
+    top:100%;
+    overflow: visible;
+  }
+}
+@media (min-width: 1024px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  body {
+    background-color: #f5f5f5;
+  }
+  .nav-link,
+  .navbar-brand,
+  .navbar-nav .nav-link.active,
+  .navbar-brand:hover,
+  .nav-link:hover,
+  .dropdown.dropdown-toggle {
+    color: white;
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown > .dropdown-toggle:active {
+    pointer-events: fill;
+  }
+  .navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .nav-link:focus {
+    color: white;
+  }
+  .navbar {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .dropdown .nav-item,
+  .nav-item a {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .dropdown-menu .inner a {
+    font-size: 14px;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 18px;
+    visibility: hidden;
+    bottom: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  .navbar li:first-child .active::after {
+    width: 60%;
+    visibility: visible;
+  }
+  .navbar a:hover::after {
+    width: 70%;
+    visibility: visible;
+  }
+  .nav-item .dropdown {
+    width: 200px;
+  }
+  :root {
+    --bs-transparent-bg: rgba(255, 255, 255, 0);
+  }
+  .dropdown-menu {
+    --bs-dropdown-link-hover-bg: var(--bs-transparent-bg);
+  }
+  .navbar .dropdown .inner ul a:hover,
+  .inner .nav-link2:hover {
+    color: #0078ff;
+  }
+  .navbar .dropdown .inner ul a {
+    transition: color 0.5s;
+  }
+  .inner .nav-link2 {
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+  }
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .hero .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .hero .overlay h1 {
+    font-size: 72px;
+  }
+  #text {
+    font-size: 35px;
+    border-right: 0.1em solid rgb(255, 248, 248);
+    white-space: nowrap;
+    animation: blink-caret 0.7s step-end infinite;
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: white;
+    }
+  }
+  .about .container-sm {
+    background-color: #ffffff;
+  }
+  .one {
+    width: 85%;
+  }
+  .two {
+    width: 75%;
+  }
+  .three {
+    width: 50%;
+  }
+  .four {
+    width: 90%;
+  }
+  .right .line,.contact .top .line {
+    width: 17%;
+    height: 3px;
+    background-color: #0078ff;
+  }
+  .about-top span{
+    font-size: 17.6px;
+    font-weight: 600;
+    color: #1e1e1e;
+  }
+  .about-top p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+  }
+  .about-bottom p {
+    font-size: 17.6px;
+    font-weight: 600;
+    color: #1e1e1e;
+  }
+  .about-bottom span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+  }
+  .about .right p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #4e4e4e;
+  }
+  .line-all {
+    width: 3%;
+    height: 5px;
+    background-color: #0078ff;
+  }
+  .title h3 {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+  }
+  .title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+  }
+  .services .serv-card {
+    background-color: #f5f5f5;
+  }
+  .services .card .card-title {
+    border: 10px solid #0078ff;
+    display: inline-block;
+    padding: 15px 29px;
+    transition: border 0.2s, background-color 0.2s 0.2s;
+  }
+  .services .card:hover .card-title {
+    border: 10px solid #cde1f8;
+    background-color: #0078ff;
+  }
+  .services .card :hover .card-title i {
+    color: #ffffff;
+  }
+  .services h2 {
+    font-size: 22.4px;
+    font-family: 500;
+  }
+  .services p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+  }
+  .circles {
+    border: 10px solid #cde1f8;
+    padding: 5px 14px;
+    color: rgb(255, 255, 255);
+  }
+  .counter {
+    height: 60vh;
+    position: relative;
+    padding: 8rem 0;
+    background-image: url(../img/post-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .counter .overlay {
+    background-color: rgba(0, 119, 255, 0.58);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .counter p {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .counter span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .portfolio .right span {
+    color: #0078ff;
+    cursor: pointer;
+  }
+  .portfolio .left h2 {
+    font-size: 19.2px;
+  }
+  .portfolio .left p .blue {
+    color: #0078ff;
+  }
+  .portfolio .left p {
+    font-size: 12.8px;
+  }
+  .portfolio .zoom:hover img {
+    transform: scale(1.5);
+  }
+  .portfolio .zoom img {
+    overflow: hidden;
+    transition: transform 1.5s;
+  }
+  .person-data {
+    height: 80vh;
+    position: relative;
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .person-data span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+  }
+  .person-data p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  .person-data .overlay {
+    position: absolute;
+    padding-top: 10%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 119, 255, 0.58);
+  }
+  .carousel-indicators .ind-left,
+  .carousel-indicators .ind-right {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .up-blue {
+    top: 100%;
+    left: 50%;
+    font-size: 11.2px;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+  }
+  .up-blue h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+  }
+  .card-footer img{
+    width: 35px;
+    border-radius: 50%;
+   }
+   .card-footer a{
+    text-decoration: none;
+    color: black;
+    transition:color .5s;
+   }
+   .card-footer a:hover,.Blog h5:hover{
+    color:#0078FF;
+   }
+   .Blog h5{
+    transition:color .5s;
+   }
+   .Blog p{
+    color: #4e4e4e;
+    margin-bottom:30px;
+   }
+   .contact{
+    position: relative;
+    height: 105vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/overlay-bg.jpg);
+   }
+   .contact .top h3{
+    font-size: 2rem;
+   }
+   .form-group .button{
+    background-color: #0078FF;
+   }
+   .contact .main-p p{
+    font-size: 1.25rem;
+    font-weight: 300;
+   }
+   .right-icons span{
+    color: #0078FF;
+   }
+   .contact .last div{
+    border: 3px solid #0078FF;
+    padding:10px;
+    border-radius:50%;
+    transition: border 1s,background-color 1s,color .5s;
+   }
+   .contact .last div:hover{
+    border: 3px solid #cde1f8;
+    background-color: #0078FF;
+    color: white;
+   }
+   .contact .overlay{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 119, 255, 0.68);
+   }
+   .footer{
+    color: #fff;
+    padding: 20px 0;
+    background: #0062d3;
+   }
+   
+}
